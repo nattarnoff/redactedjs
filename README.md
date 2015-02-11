@@ -23,16 +23,19 @@ Once the DOM is loaded, call the function `redacted()`. Examples -
 
 ### jQuery
 
-`$(document).ready(function(){
+```
+$(document).ready(function(){
   redacted();
-});`
+});
+```
 
 ### Vanilla JS
 
-`document.addEventListener('DOMContentLoaded', function(){
+```
+document.addEventListener('DOMContentLoaded', function(){
 redacted();
 });
-`
+```
 You can pass it options as well. You can change the list of words to redact, the
 color of the redaction, and the root of what to redact. 
 
@@ -42,9 +45,10 @@ List takes an array of words.
 
 Color can take hexidecimal, rgba, or keywords.
 
-`redacted({
+```
+redacted({
   color: '#ff0000',
   list: ['Hannibal', 'Monroe', 'Washington', 'Jefferson'],
   root: '.post'
 });
-`
+```
