@@ -13,7 +13,7 @@ words you pass) so they don't appear in your page.
 
 This is to remove words from a web page. In order to do so, a set list needs to
 be included to match against. This list has some very nasty words in it. I am not trying to
-offend anyone looking at the code, I'm am trying to remove these from web pages. 
+offend anyone looking at the code, I'm trying to remove these from web pages. 
 
 ## Use
 
@@ -52,3 +52,8 @@ redacted({
   root: '.post'
 });
 ```
+
+## Contributing
+
+If you have something you think this should do, please submit a PR. Remember to
+be nice, back up your arguments, and this is something for fun.
