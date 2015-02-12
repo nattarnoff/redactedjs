@@ -6,7 +6,7 @@
   <script src="js/redacted.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function(){
-        redacted();
+        redacted({root:'.content'});
     });
   </script>
   <link rel="stylesheet" href="css/style.css">
@@ -20,9 +20,17 @@
 		<a href="https://github.com/gtarnoff/redactedjs/blob/master/LICENSE">MIT License</a>
 	</div>
 </header>
+<div class="alert">
+  	<p>You can also use it as a bookmarklet to redact text on any page you want!
+    Just drag this to your bookmark bar: <a href="javascript:!function(){var
+    a=document,c=a.querySelectorAll('body,p,h1,h2,h3,h4,h5,h6,em,b,i,strong,legend,form,label,blockquote,header,footer,section,small,cite,aside,div,span,article'),d=a.createElement('style'),e=a.head,f='#000',g=a.createTextNode('.redacted{color:'+f+';background-color:'+f+';padding:
+  3px;}'),h=['fuck','[^cl]ass[^et]','shit','bitch','fag','dyke','tranny','cunt','rape','murder','tits','piss','pussy','dick','cock','nigger','spic','cracker','coon','dago','damn','gook','heeb','dike','homo','kike','jizz','kyke','mick','muff','paki','poon','slut','retard','twat','wank','[^do]cum[^ment]','splooge','nigga'],j=new
+  RegExp(h.join('|'),'ig');for(console.log(c),d.appendChild(g),e.insertBefore(d,e.querySelector('link')),i=0;i<c.length;i++)c[i].innerHTML=c[i].innerHTML.replace(j,'<mark class=\'redacted\'>&%$@#</mark>');}();">Redacted!</a></p>
+  </div>
+
 <div class="content">
   <img src="redacted.jpg" alt="CIA confidential file"/><!-- start slipsum code -->
-
+<section>
 <h2>I'm serious as a heart attack</h2>
 <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
 
@@ -42,5 +50,6 @@
 <a href="http://slipsum.com">lorem ipsum from Slipsum.com</a></div>
 
 <!-- end slipsum code -->
+</section>
 </body>
 </html>
